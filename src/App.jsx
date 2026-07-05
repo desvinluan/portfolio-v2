@@ -6,8 +6,10 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <>
-      <Header />
+    <div className="container mx-auto">
+      <div>
+        <Header />
+      </div>
       <main>
         <section className="flex flex-col items-center justify-center py-4">
           <div className="flex flex-col items-center justify-center gap-4">
@@ -17,12 +19,13 @@ function App() {
             </h1>
             <img src={BannerImage} alt="Banner" className="h-auto w-228" />
             <p className="text-lg text-center text-muted-foreground max-w-xl font-body font-semibold">
-              I blend logic, aesthetics, and user empathy to create intuitive experiences that feel effortless and intentional.
+              I blend logic, aesthetics, and user empathy to create intuitive
+              experiences that feel effortless and intentional.
             </p>
           </div>
         </section>
       </main>
-    </>
+    </div>
   );
 }
 

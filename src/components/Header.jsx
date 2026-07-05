@@ -3,7 +3,7 @@ import BGButton from "../assets/images/bg-button.png";
 
 const Header = () => {
   return (
-    <header className="flex items-center justify-between px-8 bg-background w-full">
+    <header className="flex items-center justify-between px-12 bg-background w-full shadow-xs">
       <div className="flex flex-row items-center justify-between w-full">
         <div className="flex items-center">
           <img src={Logo} alt="Logo" className="size-16" />
