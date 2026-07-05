@@ -1,6 +1,8 @@
 import { useState } from "react";
 import Header from "./components/Header";
 import BannerImage from "./assets/images/banner.png";
+import Me from "./assets/images/me.png";
+import Rab from "./assets/images/rab.png";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -22,6 +24,24 @@ function App() {
               I blend logic, aesthetics, and user empathy to create intuitive
               experiences that feel effortless and intentional.
             </p>
+          </div>
+        </section>
+        <section className="flex justify-center bg-secondary h-220 pt-16">
+          <div className="flex flex-col items-center justify-center gap-14">
+            <img src={Me} alt="Me" className="h-auto w-120" />
+            <div className="flex flex-col items-center justify-center gap-40">
+              <p className="text-lg text-center text-muted-foreground max-w-2xl font-body font-semibold">
+                I’ve always been drawn to design, noticing how some apps feel
+                effortless while others make simple tasks harder than they need
+                to be. That curiosity grew into an interest in how design shapes
+                behavior and experience, leading me into product design where I
+                focus on creating clean, intuitive interfaces. Alongside this,
+                I’ve developed frontend skills in React.js, Node.js, Tailwind
+                CSS, CSS, and HTML, helping me bridge design and real-world
+                implementation.
+              </p>
+              <img src={Rab} alt="Me" className="h-auto w-64" />
+            </div>
           </div>
         </section>
       </main>
