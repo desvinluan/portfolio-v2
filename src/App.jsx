@@ -52,12 +52,12 @@ function App() {
           </div>
         </section>
         <section
-          className="bg-size-[1540px] bg-no-repeat bg-center w-full h-636"
+          className="bg-cover bg-no-repeat bg-center w-full h-630"
           style={{ backgroundImage: `url(${BgImage})` }}
         >
           <div className="relative">
             <img src={PaperClip} alt="paperclip" className="absolute -top-32 right-32 w-48" />
-            <img src={Pin} alt="pin" className="absolute top-570 right-36 w-40" />
+            <img src={Pin} alt="pin" className="absolute top-560 right-36 w-36" />
           </div>
           <div className="px-12 py-20">
             <h1 className="text-primary text-4xl">
@@ -116,7 +116,7 @@ function App() {
           </div>
         </section>
         <section
-          className="bg-cover bg-no-repeat bg-center w-full h-210 border flex items-center"
+          className="bg-cover bg-no-repeat bg-center w-full h-210 flex items-center"
           style={{ backgroundImage: `url(${BgImageOne})` }}
         >
           <div className="flex flex-row items-center mx-12 max-w-9xl justify-between w-full">
