@@ -8,6 +8,8 @@ import ProjectCard from "./components/cards/cardOne";
 import { ChartPie, Code, Palette } from "lucide-react";
 import PaperClip from "./assets/images/paperclip.png";
 import Pin from "./assets/images/pin.png";
+import BgImageOne from "./assets/images/bg-section-1.png";
+import PlateFork from "./assets/images/plateandfork.png";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -45,7 +47,7 @@ function App() {
                 CSS, CSS, and HTML, helping me bridge design and real-world
                 implementation.
               </p>
-              <img src={Rab} alt="Me" className="h-auto w-64" />
+              <img src={Rab} alt="rab" className="h-auto w-64" />
             </div>
           </div>
         </section>
@@ -54,8 +56,8 @@ function App() {
           style={{ backgroundImage: `url(${BgImage})` }}
         >
           <div className="relative">
-            <img src={PaperClip} className="absolute -top-32 right-32 w-48" />
-            <img src={Pin} className="absolute top-570 right-36 w-40" />
+            <img src={PaperClip} alt="paperclip" className="absolute -top-32 right-32 w-48" />
+            <img src={Pin} alt="pin" className="absolute top-570 right-36 w-40" />
           </div>
           <div className="px-12 py-20">
             <h1 className="text-primary text-4xl">
@@ -110,6 +112,33 @@ function App() {
                   descClassName="font-medium text-primary"
                 />
               </div>
+            </div>
+          </div>
+        </section>
+        <section
+          className="bg-cover bg-no-repeat bg-center w-full h-210 border flex items-center"
+          style={{ backgroundImage: `url(${BgImageOne})` }}
+        >
+          <div className="flex flex-row items-center mx-12 max-w-9xl justify-between w-full">
+            <div className="flex flex-col text-accent gap-15">
+              <div className="flex flex-row gap-4 justify-start items-center px-36 pt-12">
+                <h1 className="text-6xl ">my</h1>
+                <h1 className="font-cursive font-bold text-[250px] leading-0">
+                  Girl
+                </h1>
+              </div>
+
+              <div className="flex flex-row mt-14">
+                <h1 className="font-cursive font-bold text-[250px] leading-0">
+                  Dinner
+                </h1>
+                <div className="flex mt-8 -ml-4">
+                <h1 className="text-6xl ">lately</h1>
+                </div>
+              </div>
+            </div>
+            <div className="">
+              <img src={PlateFork} alt="platefork" />
             </div>
           </div>
         </section>
