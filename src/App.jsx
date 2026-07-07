@@ -4,6 +4,10 @@ import BannerImage from "./assets/images/banner.png";
 import Me from "./assets/images/me.png";
 import Rab from "./assets/images/rab.png";
 import BgImage from "./assets/images/bg-section.png";
+import ProjectCard from "./components/cards/cardOne";
+import { ChartPie, Code, Palette } from "lucide-react";
+import PaperClip from "./assets/images/paperclip.png";
+import Pin from "./assets/images/pin.png";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -14,14 +18,14 @@ function App() {
         <Header />
       </div>
       <main>
-        <section className="flex flex-col items-center justify-center py-14">
+        <section className="flex flex-col items-center justify-center py-14 bg-background">
           <div className="flex flex-col items-center justify-center gap-4">
             <h1 className="text-4xl font-bold text-center max-w-2xl text-primary">
               Product designer with a love for clean UI and low tolerance for
               bad UX.
             </h1>
             <img src={BannerImage} alt="Banner" className="h-auto w-204" />
-            <p className="text-lg text-center text-muted-foreground max-w-xl font-body font-semibold">
+            <p className="text-lg text-center text-muted-foreground max-w-xl font-body font-medium">
               I blend logic, aesthetics, and user empathy to create intuitive
               experiences that feel effortless and intentional.
             </p>
@@ -45,11 +49,69 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="bg-size-[1580px] bg-center w-full h-680"
-        style={{ backgroundImage: `url(${BgImage})` }}>
+        <section
+          className="bg-size-[1540px] bg-no-repeat bg-center w-full h-636"
+          style={{ backgroundImage: `url(${BgImage})` }}
+        >
+          <div className="relative">
+            <img src={PaperClip} className="absolute -top-32 right-32 w-48" />
+            <img src={Pin} className="absolute top-570 right-36 w-40" />
+          </div>
           <div className="px-12 py-20">
-        <h1 className="text-primary text-4xl">see what i’ve been working on :)</h1>
-        </div>
+            <h1 className="text-primary text-4xl">
+              see what i’ve been working on :)
+            </h1>
+          </div>
+          <div className="py-72">
+            <div className="flex flex-col items-center justify-center gap-20">
+              <div className="flex flex-row items-center justify-center gap-16">
+                <ProjectCard
+                  title="FEATURED WORK"
+                  description="MTG Meal Ordering Platform – UI/UX Design"
+                  icon={ChartPie}
+                  className="bg-card"
+                  titleClassName="text-primary-foreground"
+                  descClassName="font-medium text-background"
+                />
+                <ProjectCard
+                  title="FEATURED WORK"
+                  description="SaEco: AI Waste Segregation Application – UI/UX Design"
+                  icon={ChartPie}
+                  className="bg-card-foreground"
+                  titleClassName="text-primary-foreground"
+                  descClassName="font-medium text-primary-foreground"
+                />
+              </div>
+              <div className="flex flex-row items-center justify-center gap-16">
+                <ProjectCard
+                  title="FEATURED WORK"
+                  description="Kinaiya: Top Philippine Destinations App – UI/UX Design"
+                  icon={ChartPie}
+                  className="bg-card-secondary"
+                  titleClassName="text-primary-foreground"
+                  descClassName="font-medium text-primary-foreground"
+                />
+                <ProjectCard
+                  title="FEATURED WORK"
+                  description="Yummy Tea Shop: Automated Ordering System – UI/UX Design"
+                  icon={ChartPie}
+                  className="bg-card-muted"
+                  titleClassName="text-primary-foreground"
+                  descClassName="font-medium text-primary-foreground"
+                />
+              </div>
+              <div className="flex flex-row items-center justify-center gap-16">
+                <ProjectCard
+                  title="FEATURED WORK"
+                  description="SmartLife: AI Financial Application – UI/UX Design"
+                  icon={ChartPie}
+                  className="bg-card-secondary-foreground"
+                  titleClassName="text-primary-foreground"
+                  descClassName="font-medium text-primary"
+                />
+              </div>
+            </div>
+          </div>
         </section>
       </main>
     </div>
