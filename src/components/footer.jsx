@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="relative w-full">
       {/* Background */}
-      <img src={FooterBg} alt="footer" className="w-full object-cover" />
+      <img src={FooterBg} alt="footer" className="w-full object-cover pointer-events-none" />
 
       {/* Overlay Content */}
       <div className="absolute inset-0 flex flex-col py-48 gap-12 text-background px-4">
@@ -42,9 +42,9 @@ const Footer = () => {
                   href="https://drive.google.com/file/d/1mlXAHPnQN3A76VN7XLjcvNZtIqSliUKE/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="underline hover:text-primary"
+                  className="hover:text-accent"
                 >
-                  Click for CV
+                  View Resume
                 </a>
               }
             />
@@ -56,7 +56,7 @@ const Footer = () => {
                   href="https://linkedin.com/in/deserrevinluan"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="underline hover:text-primary"
+                  className="underline hover:text-accent"
                 >
                   linkedin.com/in/deserrevinluan
                 </a>
@@ -70,7 +70,7 @@ const Footer = () => {
                   href="https://behance.net/deserrevinluan"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="underline hover:text-primary"
+                  className="underline hover:text-accent"
                 >
                   behance.net/deserrevinluan
                 </a>
@@ -82,7 +82,7 @@ const Footer = () => {
           <div className="flex items-center gap-2 text-lg opacity-80 mt-6">
             <p>Built with purpose and clarity</p>
 
-            <img src={Logo} alt="logo" className="h-6 w-auto" />
+            <img src={Logo} alt="logo" className="h-6 w-auto pointer-events-none" />
 
             <p>2026 Deserre Portfolio</p>
           </div>
