@@ -10,6 +10,7 @@ import PaperClip from "./assets/images/paperclip.png";
 import Pin from "./assets/images/pin.png";
 import BgImageOne from "./assets/images/bg-section-1.png";
 import PlateFork from "./assets/images/plateandfork.png";
+import Footer from "./components/Footer";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -56,8 +57,16 @@ function App() {
           style={{ backgroundImage: `url(${BgImage})` }}
         >
           <div className="relative">
-            <img src={PaperClip} alt="paperclip" className="absolute -top-32 right-32 w-48" />
-            <img src={Pin} alt="pin" className="absolute top-560 right-36 w-36" />
+            <img
+              src={PaperClip}
+              alt="paperclip"
+              className="absolute -top-32 right-32 w-48"
+            />
+            <img
+              src={Pin}
+              alt="pin"
+              className="absolute top-560 right-36 w-36"
+            />
           </div>
           <div className="px-12 py-20">
             <h1 className="text-primary text-4xl">
@@ -133,7 +142,7 @@ function App() {
                   Dinner
                 </h1>
                 <div className="flex mt-8 -ml-4">
-                <h1 className="text-6xl ">lately</h1>
+                  <h1 className="text-6xl ">lately</h1>
                 </div>
               </div>
             </div>
@@ -143,6 +152,9 @@ function App() {
           </div>
         </section>
       </main>
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 }
