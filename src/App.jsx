@@ -106,6 +106,7 @@ function App() {
                     className="bg-card"
                     titleClassName="text-primary-foreground"
                     descClassName="font-medium text-background"
+                    link="https://www.behance.net/gallery/251639537/MTG-Meal"
                   />
                   <ProjectCard
                     title="FEATURED WORK"
