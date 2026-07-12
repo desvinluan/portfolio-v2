@@ -33,7 +33,7 @@ export default function ProjectCard({
         <img
           src={backImage}
           alt=""
-          className="w-full h-full object-cover pointer-events-none"
+          className="w-full h-full object-cover pointer-events-none opacity-80"
         />
       </Card>
 
@@ -46,7 +46,7 @@ export default function ProjectCard({
           backfaceVisibility: "hidden",
         }}
         animate={{ rotateZ: hovered ? -5 : 0 }}
-        transition={{ duration: 0.5, ease: "easeOut" }}
+        transition={{ duration: 0.5, ease: "ease`Out" }}
       >
         <Card className={`w-full h-full cursor-pointer ${className}`}>
           <CardHeader className="flex flex-col items-start gap-10 px-8 py-8">

@@ -115,6 +115,7 @@ function App() {
                     className="bg-card-foreground"
                     titleClassName="text-primary-foreground"
                     descClassName="font-medium text-primary-foreground"
+                    link="https://www.behance.net/gallery/252209775/SaEco-Waste-Segregation-with-AI-Recognition"
                   />
                 </div>
                 <div className="flex flex-row items-center justify-center gap-16">
@@ -125,6 +126,7 @@ function App() {
                     className="bg-card-secondary"
                     titleClassName="text-primary-foreground"
                     descClassName="font-medium text-primary-foreground"
+                    link="https://www.behance.net/gallery/252581727/deufgwefjkf"
                   />
                   <ProjectCard
                     title="FEATURED WORK"
