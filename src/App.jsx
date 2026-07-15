@@ -10,7 +10,7 @@ import PaperClip from "./assets/images/paperclip.png";
 import Pin from "./assets/images/pin.png";
 import BgImageOne from "./assets/images/bg-section-1.png";
 import PlateFork from "./assets/images/plateandfork.png";
-import Footer from "./components/Footer";
+import Footer from "./components/footer";
 import CustomCursor from "./my-component/CustomCursor";
 import Figma from "./assets/images/figma.png"
 
