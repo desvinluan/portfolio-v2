@@ -126,7 +126,7 @@ function App() {
                     className="bg-card-secondary"
                     titleClassName="text-primary-foreground"
                     descClassName="font-medium text-primary-foreground"
-                    link="https://www.behance.net/gallery/252581727/deufgwefjkf"
+                    link="https://www.behance.net/gallery/252761125/KINAIYA"
                   />
                   <ProjectCard
                     title="FEATURED WORK"
