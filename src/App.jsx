@@ -12,6 +12,7 @@ import BgImageOne from "./assets/images/bg-section-1.png";
 import PlateFork from "./assets/images/plateandfork.png";
 import Footer from "./components/Footer";
 import CustomCursor from "./my-component/CustomCursor";
+import Figma from "./assets/images/figma.png"
 
 function App() {
   const [count, setCount] = useState(0);
@@ -98,53 +99,75 @@ function App() {
             </div>
             <div className="py-72">
               <div className="flex flex-col items-center justify-center gap-20">
-                <div className="flex flex-row items-center justify-center gap-16">
+                <div className="flex flex-row items-center justify-center gap-32">
                   <ProjectCard
                     title="FEATURED WORK"
-                    description="MTG Meal Ordering Platform – UI/UX Design"
+                    description="MTG Meal Ordering Platform"
                     icon={ChartPie}
                     className="bg-card"
+                    backClassName="bg-card"
                     titleClassName="text-primary-foreground"
                     descClassName="font-medium text-background"
                     link="https://www.behance.net/gallery/251639537/MTG-Meal"
+                    image={Figma}
+                    imageMt="mt-40"
+                    backText="CLICK TO VIEW"
                   />
                   <ProjectCard
                     title="FEATURED WORK"
-                    description="SaEco: AI Waste Segregation Application – UI/UX Design"
+                    description="SaEco: AI Waste Segregation Application"
                     icon={ChartPie}
                     className="bg-card-foreground"
+                    backClassName="bg-card-foreground"
                     titleClassName="text-primary-foreground"
                     descClassName="font-medium text-primary-foreground"
                     link="https://www.behance.net/gallery/252209775/SaEco-Waste-Segregation-with-AI-Recognition"
+                    image={Figma}
+                    imageMt="mt-32"
+                    backText="CLICK TO VIEW"
                   />
                 </div>
-                <div className="flex flex-row items-center justify-center gap-16">
+                <div className="flex flex-row items-center justify-center gap-32">
                   <ProjectCard
                     title="FEATURED WORK"
-                    description="Kinaiya: Top Philippine Destinations App – UI/UX Design"
+                    description="Kinaiya: Top Philippine Destinations App"
                     icon={ChartPie}
                     className="bg-card-secondary"
+                    backClassName="bg-card-secondary"
                     titleClassName="text-primary-foreground"
                     descClassName="font-medium text-primary-foreground"
                     link="https://www.behance.net/gallery/252761125/KINAIYA"
+                    image={Figma}
+                    imageMt="mt-32"
+                    backText="CLICK TO VIEW"
                   />
                   <ProjectCard
                     title="FEATURED WORK"
-                    description="Yummy Tea Shop: Automated Ordering System – UI/UX Design"
+                    description="Zion Damian - Pinoy Cuisine"
                     icon={ChartPie}
                     className="bg-card-muted"
+                    backClassName="bg-card-muted"
                     titleClassName="text-primary-foreground"
                     descClassName="font-medium text-primary-foreground"
+                    link="https://www.behance.net/gallery/252771973/Pinoy-Cuisine"
+                    image={Figma}
+                    imageMt="mt-40"
+                    backText="CLICK TO VIEW"
                   />
                 </div>
                 <div className="flex flex-row items-center justify-center gap-16">
                   <ProjectCard
                     title="FEATURED WORK"
-                    description="SmartLife: AI Financial Application – UI/UX Design"
+                    description="SmartLife: AI Financial Application "
                     icon={ChartPie}
                     className="bg-card-secondary-foreground"
+                    backClassName="bg-card-secondary-foreground"
                     titleClassName="text-primary-foreground"
                     descClassName="font-medium text-primary"
+                    link="https://www.behance.net/gallery/252768401/SmartLife-Financial-Application"
+                    image={Figma}
+                    imageMt="mt-32"
+                    backText="CLICK TO VIEW"
                   />
                 </div>
               </div>

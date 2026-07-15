@@ -6,14 +6,17 @@ import {
   CardDescription,
   CardTitle,
 } from "@/components/ui/card";
-import BgImage from "@/assets/images/book-page.jpg";
 
 export default function ProjectCard({
   title,
   description,
   icon: Icon,
-  backImage = BgImage, // image URL/import for the "inside the folder" face
+  image: Image,
+  imageMt,
+  backText,
+  backClassName,
   className,
+  cardClassName,
   titleClassName,
   descClassName,
   link,
@@ -28,16 +31,26 @@ export default function ProjectCard({
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      {/* BACK CARD — stays still, image fills it via object-cover */}
-      <Card className="absolute inset-0 w-full h-full overflow-hidden p-0">
-        <img
-          src={backImage}
-          alt=""
-          className="w-full h-full object-cover pointer-events-none opacity-80"
-        />
-      </Card>
+      <Card
+        className={`absolute inset-0 w-full h-full overflow-hidden p-0 ${backClassName}`}
+      ></Card>
 
-      {/* FRONT CARD — rotates open to the left, hinged on its left edge */}
+      <motion.div
+        animate={{
+          x: hovered ? 60 : 0,
+          y: hovered ? 16 : 0,
+        }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
+      >
+        <Card className="absolute inset-0 w-60 h-108 top-8 left-12 rotate-8 bg-background">
+          {backText && (
+            <div className="absolute flex items-end justify-end text-foreground font-bold rotate-270 top-20 -right-8">
+              <p className={`text-end text-lg`}>{backText}</p>
+            </div>
+          )}
+        </Card>
+      </motion.div>
+
       <motion.div
         className="absolute inset-0 w-full h-full"
         style={{
@@ -45,8 +58,8 @@ export default function ProjectCard({
           transformOrigin: "left center",
           backfaceVisibility: "hidden",
         }}
-        animate={{ rotateZ: hovered ? -5 : 0 }}
-        transition={{ duration: 0.5, ease: "ease`Out" }}
+        animate={{ rotateY: hovered ? -40 : 0 }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
       >
         <Card className={`w-full h-full cursor-pointer ${className}`}>
           <CardHeader className="flex flex-col items-start gap-10 px-8 py-8">
@@ -57,6 +70,13 @@ export default function ProjectCard({
             <CardDescription className={descClassName}>
               {description}
             </CardDescription>
+            {Image && (
+              <img
+                src={Image}
+                alt=""
+                className={`h-10 w-10 opacity-50 ${imageMt}`}
+              />
+            )}
           </CardHeader>
         </Card>
       </motion.div>
